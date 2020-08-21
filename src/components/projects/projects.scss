@@ -1,0 +1,65 @@
+.projects-container {
+  width: 700px;
+  margin: 0px auto;
+  cursor: default;
+  .projects-title {
+    color: #636363;
+    font-size: 3.5em;
+    margin: 50px 0px;
+    padding-bottom: 30px;
+    border-bottom: 3px dashed #636363;
+    width: 80%;
+    user-select: none;
+    cursor: default;
+  }
+  .amm {
+    background-color: #7a59e4;
+    width: fit-content;
+    margin: 0px;
+    padding: 12px 30px;
+    font-size: 1em;
+    color: #f8dd74;
+    cursor: default;
+    user-select: none;
+  }
+}
+.projects-items {
+  background-color: crimson;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .projects-container {
+    width: 100%;
+    // height: auto;
+    .projects-items {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(8, 50vh);
+    }
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .projects-container {
+    width: 80%;
+    .projects-items {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: repeat(2, calc(80vw / 4));
+    }
+  }
+}
+
+// /* Medium devices (landscape tablets, 768px and up) */
+// @media only screen and (min-width: 768px) {
+// }
+
+// /* Large devices (laptops/desktops, 992px and up) */
+// @media only screen and (min-width: 992px) {
+// }
+
+// /* Extra large devices (large laptops and desktops, 1200px and up) */
+// @media only screen and (min-width: 1200px) {
+// }
